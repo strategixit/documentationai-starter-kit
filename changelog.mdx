@@ -1,0 +1,123 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to AC.
+---
+
+## Recent Releases
+
+AC releases follow semantic versioning. You receive updates automatically, but check this changelog for details on new features, bug fixes, and breaking changes.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or join the Discord community to get notified of new releases.
+</Callout>
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation pages
+- Introduced version history with diff viewer
+- New search indexing for faster page lookups
+
+## Improvements
+
+- Enhanced performance for large documentation sites
+- Better mobile responsiveness in the editor
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Custom domains support for published docs
+- Theme customization with CSS variables
+- Integrated analytics dashboard
+
+## Bug Fixes
+
+- Fixed rendering issues with nested code blocks
+- Resolved authentication errors during SSO login
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## Breaking Changes
+
+- Updated API endpoints to use `{version}` prefix (e.g., `/v1/docs`)
+
+## New Features
+
+- Core documentation editor with MDX support
+- GitHub integration for version control
+- Public/private workspace management
+
+</Update>
+
+## Upgrading to the Latest Version
+
+Follow these steps to ensure your AC instance runs the latest version.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+    Run the version check command in your project root.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm run version
+    ````
+    ````bash
+    yarn version
+    ````
+    </CodeGroup>
+  </Step>
+  
+  <Step title="Update Dependencies" icon="upload">
+    Pull the latest changes and reinstall.
+    
+    <CodeGroup tabs="npm,yarn">
+    ````bash
+    npm update ac-docs
+    ````
+    ````bash
+    yarn upgrade ac-docs
+    ````
+    </CodeGroup>
+  </Step>
+  
+  <Step title="Restart Services" icon="refresh-cw">
+    Restart your AC server.
+    
+    ````bash
+    npm run dev
+    ````
+  </Step>
+</Steps>
+
+## Upcoming Changes
+
+Preview what's coming next in AC.
+
+<Columns cols={2}>
+  <Card title="v1.3.0" icon="zap" horizontal>
+    AI-assisted content generation and auto-summaries.
+  </Card>
+  
+  <Card title="v2.0.0" icon="rocket" horizontal>
+    Multi-workspace support and enterprise features.
+  </Card>
+</Columns>
+
+<Expandable title="Detailed Roadmap" default-open="false">
+  View the full roadmap on our GitHub projects board.
+  
+  | Milestone | Features | ETA |
+  |-----------|----------|-----|
+  | v1.3.0   | AI tools, plugins | Q4 2024 |
+  | v2.0.0   | Enterprise auth, teams | Q1 2025 |
+</Expandable>
+
+<Callout kind="tip">
+  Found a bug? [Submit an issue](https://github.com/your-org/ac/issues) on GitHub.
+</Callout>

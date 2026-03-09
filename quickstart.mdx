@@ -1,0 +1,136 @@
+---
+title: Getting Started with AC
+description: Set up your AC account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+<Callout kind="info" title="Before You Begin">
+Ensure you have:
+- A valid email address for account registration
+- A modern web browser like Chrome, Firefox, or Safari
+- Optional: A GitHub account for version control integration
+</Callout>
+
+## Step 1: Create Your AC Account
+
+Follow these steps to register and log in to AC.
+
+<Steps>
+  <Step title="Visit the AC Dashboard" icon="monitor">
+    Open your browser and navigate to `https://dashboard.example.com`.
+  </Step>
+  <Step title="Sign Up" icon="user-plus">
+    Click the **Sign Up** button. Fill in your email, password, and display name. Accept the terms of service.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for a verification email from AC. Click the link to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and enter your credentials to access the main interface.
+  </Step>
+</Steps>
+
+## Step 2: Create Your First Documentation Space
+
+A documentation space organizes your project docs. Set one up now.
+
+<Steps>
+  <Step title="Navigate to Spaces" icon="folder">
+    From the dashboard sidebar, select **Documentation Spaces**.
+  </Step>
+  <Step title="Create New Space" icon="plus">
+    Click **New Space**. Enter a name like `My Project Docs` and select a template (e.g., "Software").
+  </Step>
+  <Step title="Configure Settings" icon="settings">
+    Set visibility to **Private** or **Public**, and add a description: "Documentation for My Project".
+  </Step>
+  <Step title="Save and Enter" icon="check-circle">
+    Click **Create**. You'll land in your new space's overview page.
+  </Step>
+</Steps>
+
+## Basic Interface Tour
+
+Explore the key areas of the AC interface using these tabs.
+
+<Tabs>
+  <Tab title="Sidebar Navigation" icon="menu">
+    The left sidebar shows:
+    - **Spaces**: List of your documentation spaces
+    - **Pages**: Individual docs within a space
+    - **Search**: Global search across content
+    - **Settings**: Space and account preferences
+
+    <Image
+      src="https://via.placeholder.com/600x300/1F883D/FFFFFF?text=Sidebar"
+      alt="AC Sidebar Navigation"
+      width="600"
+      height="300"
+    />
+  </Tab>
+  <Tab title="Editor Toolbar" icon="edit-3">
+    Top toolbar includes:
+    - **Markdown Editor**: WYSIWYG or code view toggle
+    - **Preview**: Live rendering of your content
+    - **Publish**: Save and deploy changes
+
+    Use this for quick edits.
+  </Tab>
+  <Tab title="Version History" icon="git-branch">
+    Right panel tracks changes:
+    - Commit history
+    - Diff viewer
+    - Rollback options
+  </Tab>
+</Tabs>
+
+## Upload Your Initial Documents
+
+Add content to your space.
+
+<Steps>
+  <Step title="Create a New Page" icon="file-plus">
+    In your space, click **New Page**. Name it `README.md`.
+  </Step>
+  <Step title="Add Content" icon="type">
+    Paste initial markdown:
+
+````markdown
+# Welcome to My Project
+
+This is your starting documentation.
+````
+
+  </Step>
+  <Step title="Upload Files" icon="upload">
+    Drag and drop images or docs into the editor, or use **Insert > File**.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Click **Publish** to make it live.
+  </Step>
+</Steps>
+
+<Callout kind="tip" title="Pro Tip">
+Customize your space theme with brand color `#1F883D` in **Settings > Appearance**.
+</Callout>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Learn Authentication" icon="shield" href="/authentication">
+    Secure your spaces with API keys and webhooks.
+  </Card>
+  <Card title="Advanced Features" icon="sparkles" href="/introduction">
+    Explore collaboration and integrations.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    Stay updated with the latest releases.
+  </Card>
+</Columns>
+
+<Expandable title="Troubleshooting Common Issues" default-open="false">
+- **Login fails?** Check spam for verification email.
+- **Space not visible?** Verify permissions in settings.
+- **Editor slow?** Clear browser cache.
+</Expandable>
